@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+h1{
+position: relative;
+           display: inline-block;
+transition: .2s;
+}
+h1 span{
+position: absolute;
+width: 0;
+height: 3px;
+background: #4068f1
+;
+bottom: 0;
+left: 50%;
+transition: all .2s;
+}
+h1.active{
+color:#4068f1
+;
+}
+h1.active span{
+width: 100%;
+left: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+	<div style="text-align: center; margin: 80px auto;">
+		<h1>666<span></span></h1>
+		<input type="button" value="喵" style=" background-color: #4068f1; border: none;padding: 20px;color: #eeeeee;display: block; margin: auto">
+	</div>
+	<script type="text/javascript">
+var input=document.querySelector('input');
+var oH1=document.querySelector('h1');
+input.onclick=function(){
+if(oH1.className==''){
+oH1.className='active';
+}else{
+oH1.className='';
+}
+}
+</script>
+</body>
+</html>
