@@ -27,6 +27,7 @@
                 width: 300px;
                 left: 50%;
                 margin-left: -150px;
+				
                 /*   top: 100px; */
             }
             .ear-wrap{
@@ -35,6 +36,7 @@
                 width: 300px;
                 margin-left: -150px;
                 margin-top: 20px;
+				
             }
             .ear {
                 position: absolute;
@@ -43,12 +45,17 @@
                 border: 2px solid #000;
                 background: #fbf8f1;
                 border-radius: 100% 10% 50% 0% ;
-            }
+				transition: transform 1s;
+				
+			}
             .ear-wrap .right {
                 left: auto;
                 right: 0;
                 border-radius: 10% 100% 0% 50%;
                 background: #f1ac2b;
+								transform-origin：50% 100%;
+				transition: transform 1s;
+
             }
             /* 头发 */
             .hair {
@@ -104,6 +111,7 @@
                 margin-top: 48px;
                 border-top: 2px solid #46240b;
                 background: #f6f7f2;
+				transition: .2s
             }
             .eye-wrap .right {
                 left: auto;
@@ -120,6 +128,7 @@
                 border-radius: 50% 50% 50% 50%;
                 background: #e85a5e;
                 opacity: 0.0;
+				transition: .1s
             }
             /* 鼻子 */
             .nose {
@@ -151,6 +160,7 @@
                 margin-top: -26px;
                 position: absolute;
                 left: 0;
+				transition: 1s;
             }
             .mouth-wrap .right {
                 border-bottom: 4px solid #000;
@@ -162,6 +172,36 @@
                 right: 0;
             }
             /*鼠标hover样式 写在这里*/
+			.face:hover ~ .ear-wrap .left {
+            transform: rotate(-30deg);
+            }
+
+            .face:hover ~ .ear-wrap .right {
+            transform: rotate(30deg);
+            }   
+
+            .face:hover .eye-core {
+            transform: scaleY(0.9);
+			
+            }
+
+            .face:hover .eye-bottom {
+            transform: translate(0,-10px);
+            }
+
+            .face:hover .eye-wrap .eye .face-red {
+            opacity: 1;
+            }
+
+            .face:hover .mouth-wrap .left {
+            border-radius: 0% 40% 50% 50%;
+             }
+
+            .face:hover .mouth-wrap .right {
+            border-radius: 40% 0% 50% 50%;
+            }
+		
+
         </style>
     </head>
     <body>
