@@ -14,6 +14,9 @@
 	margin: 12px;
 	display: inline-block
 	}
+	
+	
+	/* 左倾斜30度 */
 	div#a{
 	transform: skewX(30deg);
 	-ms-transform: skewX(30deg);/* IE 9 */
@@ -21,7 +24,9 @@
 	-webkit-transform: skewX(30deg);/* Safari and Chrome */
 	-o-transform: skewX(30deg);/* Opera */	
 	}
-
+	
+	
+	/* x压缩两倍 */
 	div#b{
 	transform: scale(0.5,1);
 	-ms-transform:scale(0.5,1); /* IE 9 */
@@ -29,21 +34,28 @@
     -webkit-transform:scale(0.5,1); /* Safari and Chrome */
     -o-transform:rotate(45deg); /* Opera */	
 	}
-
-	div#c{
+	
+	/* 顺时针旋转45度 */
+    div#c{
 	transform: rotate(45deg);
 	-ms-transform:rotate(45deg); /* IE 9 */
     -moz-transform:rotate(45deg); /* Firefox */
     -webkit-transform:rotate(45deg); /* Safari and Chrome */
     -o-transform:rotate(45deg); /* Opera */	
 	}
+	
+	
+	/* x轴位移10px y轴位移20px */
 	div#d{
 	transform: translate(10px,20px);
 	-ms-transform: translate(10px,20px); /* IE 9 */
     -moz-transform: translate(10px,20px); /* Firefox */
     -webkit-transform: translate(10px,20px); /* Safari and Chrome */
-    -o-transform: translate(10px,20px); /* Opera */	
+    -o-transform: translate(10px,20px); s /* Opera */	
 	}
+	
+	
+	/* 包含上述所有 */
 	div#e{
 	transform:
 		skew(30deg)
